@@ -1,0 +1,14 @@
+{
+  "name": "input-dynamic-select",
+  "version": "1.0.0",
+  "description": "input框的动态搜索下拉框",
+  "main": "dSelect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "动态搜索下拉框；input动态下拉框；input下拉框"
+  ],
+  "author": "Yog Zhang",
+  "license": "ISC"
+}
