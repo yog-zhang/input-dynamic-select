@@ -33,13 +33,17 @@ classArray[3]：配置下拉框最外层节点的直接子代节点包含的输�
 ```
 <div style="width: 200px;">
     <input type="text" id="inputId">
-    <ul class="iuds-selectPanel-0">
+    <ul class="iuds-selectPanel-0 iuds-selectPanel-common">
         <li><span>男子</span>单打羽毛球</li>
         <li><span>男子</span>双打乒乓球</li>
         <li><span>男子</span>单打网球</li>
     </ul>
 </div>
 ```
+备注：可以看到ul元素有两个类选择器，第一个类选择器是根据该下拉框是第几个被创建的实例，
+如'iuds-selectPanel-0'则表示是第一个被创建的下拉框实例，所以后面是索引'0',前面部分的名字是固定的；
+第二个类选择器名字是固定的，所有的下拉框实例共同的类选择器都是'iuds-selectPanel-common'，
+所以可以通过这个类选择器对所有的下拉框设置共同的样式<br>
 例如：
 ```
 let dSelect = new DSelect('inputNode',

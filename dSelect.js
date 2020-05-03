@@ -91,7 +91,7 @@ DSelect.prototype.createSelectNode = function(){
         this.updownSelectNode.parentNode.removeChild(this.updownSelectNode)
     }
     this.updownSelectNode = document.createElement('ul')
-    this.updownSelectNode.setAttribute('class', `iuds-selectPanel-${count}`)
+    this.updownSelectNode.setAttribute('class', `iuds-selectPanel-${count} iuds-selectPanel-common`)
     let style = document.createElement('style')
     style.setAttribute('type', 'text/css')
     document.head.appendChild(style) 
