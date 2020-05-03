@@ -9,25 +9,25 @@
 ## 使用
 
 ### 下载安装
-1. 下载node包
+1. 下载node包<br>
 `npm install input-dynamic-select --save`
 在需要使用的代码中导入该插件
 `import DSelect from 'input-dynamic-select'`
 
-2. 全局引入 
+2. 或全局引入 <br>
 `<script src='./dSelect.js'></script>`
 
 ### 创建插件对象
 
 `let dSelect = new DSelect(id, classArray)`
 
-说明：
--id: 绑定的input输入框的id选择器名称，如下面的'inputId'
--classArray: 下拉框的类配置数组，每个元素都是JSON对象，将整个下拉框显示样式完全交给用户配置
-classArray[0]：配置下拉框最外层节点（即ul元素）的类样式，对应下面的ul元素的类选择器'iuds-selectPanel-0'的样式
-classArray[1]：配置下拉框最外层节点的直接子代节点（即li元素）的类样式，对应下面的li元素的样式
-classArray[2]：配置鼠标悬浮在下拉框最外层节点的直接子代节点（即li元素）的类样式，对应下面悬浮在li元素上时的样式
-classArray[3]：配置下拉框最外层节点的直接子代节点包含的输入框关键字（即span）的类样式，对应下面span元素的样式
+说明 <br>
+id: 绑定的input输入框的id选择器名称，如下面的'inputId'<br>
+classArray: 下拉框的类配置数组，每个元素都是JSON对象，将整个下拉框显示样式完全交给用户配置<br>
+classArray[0]：配置下拉框最外层节点（即ul元素）的类样式，对应下面的ul元素的类选择器'iuds-selectPanel-0'的样式<br>
+classArray[1]：配置下拉框最外层节点的直接子代节点（即li元素）的类样式，对应下面的li元素的样式<br>
+classArray[2]：配置鼠标悬浮在下拉框最外层节点的直接子代节点（即li元素）的类样式，对应下面悬浮在li元素上时的样式<br>
+classArray[3]：配置下拉框最外层节点的直接子代节点包含的输入框关键字（即span）的类样式，对应下面span元素的样式<br>
 
 动态下拉框的html结构如下：
 ```
@@ -71,8 +71,8 @@ let dSelect = new DSelect('inputNode',
 ### 设置数据列表
 `dSelect.setDataList(dataList)`
 
-说明：
--dataList: 数组类型，传入从后台返回的数据
+<br>说明：<br>
+dataList: 数组类型，传入从后台返回的数据<br>
 
 例如：
 ```
@@ -89,8 +89,9 @@ $.ajax({
 ### 获取下拉框的一些选项
 `dSelect.getOptions()`
 
-说明：
+<br>说明：<br>
 返回的是一个对象：
+```
 {
     inputId: 绑定的input输入框id选择器名称
     selectClass: 动态下拉框类选择器名称
@@ -98,3 +99,4 @@ $.ajax({
     selectNode: 动态下拉框节点
     dataList: 查询的数据列表
 }
+```
