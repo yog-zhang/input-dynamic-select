@@ -1,14 +1,14 @@
-#input-dynamic-select简介
+# input-dynamic-select简介
 
-##概述
+## 概述
 
 在做项目的时候，经常会用到动态搜索下拉框的需求，
 网上也没有找到很好的插件来达到这个目的，于是自己开发了一个这样的插件。
 该插件将更多的配置权给用户，用户可以根据自己的需求进行配置这个动态下拉框
 
-##使用
+## 使用
 
-###下载安装
+### 下载安装
 1. 下载node包
 `npm install input-dynamic-select --save`
 在需要使用的代码中导入该插件
@@ -17,7 +17,7 @@
 2. 全局引入 
 `<script src='./dSelect.js'></script>`
 
-###创建插件对象
+### 创建插件对象
 
 `let dSelect = new DSelect(id, classArray)`
 
@@ -68,7 +68,7 @@ let dSelect = new DSelect('inputNode',
         ]
     )
 ```
-###设置数据列表
+### 设置数据列表
 `dSelect.setDataList(dataList)`
 
 说明：
@@ -86,7 +86,7 @@ $.ajax({
 当然这是要配合input框的的输入进行动态查询，所以需要将请求封装成一个方法，
 然后每当input框输入关键字查询，就会调用该方法，动态获取请求数据列表
 
-###获取下拉框的一些选项
+### 获取下拉框的一些选项
 `dSelect.getOptions()`
 
 说明：
