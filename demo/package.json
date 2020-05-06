@@ -1,6 +1,6 @@
 {
   "name": "input-updown-selection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "input输入框下拉列表上下选择条目实现",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "input-dynamic-select": "^1.0.0",
+    "input-dynamic-select": "^1.0.1",
     "jquery": "^3.5.0"
   }
 }
