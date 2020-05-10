@@ -6,6 +6,7 @@ function DSelect(id,StyleObjArr){
     // this.keywords = ''
     // this.realDataList = []
     this.curItemIndex = -1
+    this.instanceSeq = 0
     this.inputNode = document.querySelector('#' + id)
     this.updownSelectNode = null
     this.init()
@@ -87,6 +88,7 @@ DSelect.prototype.getDataList = function(){
  */
 DSelect.prototype.createSelectNode = function(){
     let count = Object.getPrototypeOf(this).instanceCount++
+    this.instanceSeq = count
     if(this.updownSelectNode && this.updownSelectNode.parentNode && this.updownSelectNode.parentNode.querySelector(`.iuds-selectPanel-${count}`)){
         this.updownSelectNode.parentNode.removeChild(this.updownSelectNode)
     }
@@ -281,7 +283,8 @@ DSelect.prototype.activeItem = function(nIndex, oIndex){
 DSelect.prototype.getOptions = function(){
     return {
         inputId: this.id,
-        selectClass: `iuds-selectPanel-${Object.getPrototypeOf(this).instanceCount - 1}`,
+        instanceSeq: this.instanceSeq,
+        selectClass: `iuds-selectPanel-${this.instanceSeq}`,
         inputNode: this.inputNode,
         selectNode: this.updownSelectNode,
         dataList: this.dataList

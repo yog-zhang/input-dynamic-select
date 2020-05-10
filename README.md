@@ -98,6 +98,7 @@ $.ajax({
 ```
 {
     inputId: 绑定的input输入框id选择器名称
+    instanceSeq: 下拉框实例化时的序号
     selectClass: 动态下拉框类选择器名称
     inputNode: 绑定的input输入框节点
     selectNode: 动态下拉框节点

@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "input-dynamic-select": "^1.0.1",
+    "input-dynamic-select": "^1.0.2",
     "jquery": "^3.5.0"
   }
 }

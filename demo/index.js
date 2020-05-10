@@ -58,6 +58,7 @@ inputNode.addEventListener('input', (e) => {
 })
 //当敲击动态下拉框元素之外的元素时，隐藏下拉框
 document.body.addEventListener('click',function(e){
+    e.stopPropagation()
     let inputPanel = document.querySelector('.inputPanel')
     if(!inputPanel.contains(e.target)){
         dSelect.getOptions().selectNode.style.display = 'none'
